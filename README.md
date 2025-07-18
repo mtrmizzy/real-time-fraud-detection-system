@@ -101,5 +101,7 @@ multi-modal-fraud-detection/
 
 ## 📬 **Contact**
 If you'd like to collaborate, discuss this project, or provide feedback, feel free to reach out!
+
 LinkedIn: https://www.linkedin.com/in/marcus-moody-153a83253/
+
 GitHub: [mtrmizzy](https://github.com/mtrmizzy)
