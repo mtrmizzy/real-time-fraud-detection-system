@@ -20,17 +20,6 @@ The system combines **traditional machine learning** with a **computer vision mo
 
 ---
 
-## 🔗 **System Architecture**
-[Simulated Transactions] ---> [Kafka] ---> [PySpark] ---> [ML Fraud Model] ---> [Warehouse]
-
-[Simulated Check Images] ---> [S3/MinIO] ---> [OCR Metadata to Kafka] ---> [PyTorch CNN Model] ---> [Warehouse]
-
-                            \_______________________________________/
-                                         |
-                              [Unified Fraud API]
-
----
-
 ## 💡 **Key Features**
 - **Real-Time Transaction Streaming**
     Stream simulated bank transactions with Kafka.
@@ -52,25 +41,6 @@ The system combines **traditional machine learning** with a **computer vision mo
 
 - **Orchestration & Automation**
     Automate ETL jobs, model retraining, and monitoring with Apache Airflow.
-
----
-
-## 📂 **Project Structure**
-multi-modal-fraud-detection/
-├── data/
-│   ├── transactions/       # Simulated transaction data
-│   └── check_images/       # Synthetic check images (valid & fraud)
-├── models/
-│   ├── transaction_model/  # Traditional ML model
-│   └── cnn_model/          # CNN for check images
-├── pipelines/
-│   ├── kafka_producers/    # Stream transaction & check metadata
-│   └── spark_jobs/         # PySpark processing scripts
-├── deployment/
-│   ├── flask_api/          # Unified fraud detection API
-│   └── docker/             # Dockerfiles & deployment configs
-├── airflow_dags/           # Scheduled jobs for ETL & retraining
-└── README.md
 
 ---
 
